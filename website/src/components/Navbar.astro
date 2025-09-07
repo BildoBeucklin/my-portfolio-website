@@ -5,12 +5,15 @@ import ContainerHover from "@components/ContainerHover.astro"
 ---
 
 <nav class="w-full flex justify-between items-center">
-  <span class="text-xl">@username</span>
+  <div class="flex gap-x-6 text-lg">
+    <a href="/" class="text-zinc-400 hover:text-zinc-100 transition-colors">Home</a>
+    <a href="/showcase" class="text-zinc-400 hover:text-zinc-100 transition-colors">Showcase</a>
+  </div>
   <div class="flex gap-3 items-center">
-    <ContainerHover link="mailto:ejemplo@gmail.com">
+    <ContainerHover link="mailto:konstantin.rossmann@gmail.com">
       <Email />
     </ContainerHover>
-    <ContainerHover link="https://github.com/ejemplo">
+    <ContainerHover link="https://github.com/BildoBeucklin">
       <Github />
     </ContainerHover>
   </div>
